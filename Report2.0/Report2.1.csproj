@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D8E7FF8-A163-4A2F-8F3F-3291229670C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Report2._1</RootNamespace>
+    <AssemblyName>Report2.1</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Gear-icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterCall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterCall.Designer.cs">
+      <DependentUpon>InterCall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternetError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternetError.Designer.cs">
+      <DependentUpon>InternetError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntStop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntStop.Designer.cs">
+      <DependentUpon>IntStop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LED.Designer.cs">
+      <DependentUpon>LED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NOInternet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NOInternet.Designer.cs">
+      <DependentUpon>NOInternet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoLED.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoLED.Designer.cs">
+      <DependentUpon>NoLED.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoNetwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoNetwork.Designer.cs">
+      <DependentUpon>NoNetwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoSignal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoSignal.Designer.cs">
+      <DependentUpon>NoSignal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternerRe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternerRe.Designer.cs">
+      <DependentUpon>InternerRe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StopTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StopTV.Designer.cs">
+      <DependentUpon>StopTV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TV.Designer.cs">
+      <DependentUpon>TV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="unplug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unplug.Designer.cs">
+      <DependentUpon>unplug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WIFI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WIFI.Designer.cs">
+      <DependentUpon>WIFI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="난독기.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="난독기.Designer.cs">
+      <DependentUpon>난독기.cs</DependentUpon>
+    </Compile>
+    <Compile Include="미인증.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="미인증.Designer.cs">
+      <DependentUpon>미인증.cs</DependentUpon>
+    </Compile>
+    <Compile Include="바로가기창.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="바로가기창.Designer.cs">
+      <DependentUpon>바로가기창.cs</DependentUpon>
+    </Compile>
+    <Compile Include="타이머.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="타이머.Designer.cs">
+      <DependentUpon>타이머.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterCall.resx">
+      <DependentUpon>InterCall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternerRe.resx">
+      <DependentUpon>InternerRe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternetError.resx">
+      <DependentUpon>InternetError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntStop.resx">
+      <DependentUpon>IntStop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LED.resx">
+      <DependentUpon>LED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NOInternet.resx">
+      <DependentUpon>NOInternet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoLED.resx">
+      <DependentUpon>NoLED.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoNetwork.resx">
+      <DependentUpon>NoNetwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoSignal.resx">
+      <DependentUpon>NoSignal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StopTV.resx">
+      <DependentUpon>StopTV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TV.resx">
+      <DependentUpon>TV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unplug.resx">
+      <DependentUpon>unplug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WIFI.resx">
+      <DependentUpon>WIFI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="난독기.resx">
+      <DependentUpon>난독기.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="미인증.resx">
+      <DependentUpon>미인증.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="바로가기창.resx">
+      <DependentUpon>바로가기창.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="타이머.resx">
+      <DependentUpon>타이머.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Gear-icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
